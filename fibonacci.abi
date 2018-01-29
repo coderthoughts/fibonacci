@@ -1,0 +1,30 @@
+{
+  "structs": [{
+      "name": "compute",
+      "base": "",
+      "fields": {
+        "iterations": "uint64"
+      }
+    },{
+	"name": "result",
+	"base": "",
+	"fields": {
+	"id": "name",
+	"value": "uint64"
+      }
+    }
+  ],
+  "actions": [{
+      "action_name": "compute",
+      "type": "compute"
+    }
+  ],
+  "tables": [{
+      "table_name": "results",
+      "type": "result",
+      "index_type": "i64",
+      "key_names": ["id"],
+      "key_types": ["name"]
+    }
+  ]
+}
